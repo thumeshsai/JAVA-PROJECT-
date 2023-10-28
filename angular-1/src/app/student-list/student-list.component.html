@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Apply styles to the student table */
+    .table.table-stripped tbody tr:hover {
+      background-color: grey; /* Whole row turns grey when hovering */
+    }
+
+    .table.table-stripped tbody tr {
+      background-color: lightgrey; /* Light grey background for all rows */
+    }
+
+    .table.table-stripped tbody tr:nth-child(odd) {
+      background-color: grey; /* Ensure alternating rows are light grey */
+    }
+  </style>
+</head>
+<body>
+
+<h2> Student List </h2>
+<table class="table table-stripped" style="border: 1px solid #000;">
+  <thead>
+  <tr style="background-color: #f0f0f0;">
+    <th> ID </th>
+    <th> Name </th>
+    <th> Department </th>
+    <th> Phone Number </th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let student of students; let i = index">
+    <tr>
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.department }}</td>
+      <td>{{ student.phoneNumber }}</td>
+      <td><a [routerLink]="['/student-details', student.id]" class="link" style="margin-left: 10px">Details</a></td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>
+
+</body>
+</html>

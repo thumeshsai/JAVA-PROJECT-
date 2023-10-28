@@ -1,0 +1,12 @@
+.student-details {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+
+.student-not-found {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffcccc; /* Add a background color for not found section */
+}

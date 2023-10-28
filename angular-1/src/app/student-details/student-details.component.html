@@ -1,0 +1,18 @@
+<h3>Student Details</h3>
+
+<div class="student-details" *ngIf="student">
+  <div>
+    <label><b>ID:</b></label> {{ student.id }}
+  </div>
+  <div>
+    <label><b>Name:</b></label> {{ student.name }}
+  </div>
+  <div>
+    <label><b>Department:</b></label> {{ student.department }}
+  </div>
+  <div>
+    <label><b>Phone Number:</b></label> {{ student.phoneNumber }}
+  </div>
+</div>
+
+<div class="student-not-found" *ngIf="!student">Student not found.</div>

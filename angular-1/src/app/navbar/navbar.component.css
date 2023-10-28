@@ -1,0 +1,9 @@
+.navbar-nav .nav-link:hover {
+  color: orange; /* Change the text color to red on hover */
+  background-color: transparent; /* Remove any background color on hover */
+  transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+.active-link {
+  color: red; /* Change the text color for the active link */
+}
